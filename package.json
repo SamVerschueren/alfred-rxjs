@@ -1,0 +1,48 @@
+{
+  "name": "alfred-rxjs",
+  "version": "0.0.0",
+  "description": "Search through the RxJS documentation",
+  "license": "MIT",
+  "repository": "SamVerschueren/alfred-rxjs",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "rxjs",
+    "observable",
+    "observables",
+    "reactive",
+    "documentation",
+    "productivity"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0",
+    "globby": "^6.1.0",
+    "rxjs": "^5.1.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
