@@ -12,7 +12,7 @@ rxjs.getDocs()
 					subtitle: method.type,
 					autocomplete: method.title,
 					arg: method.url,
-					quiclookurl: method.url,
+					quicklookurl: method.url,
 					mods: {
 						alt: {
 							subtitle: method.import,
