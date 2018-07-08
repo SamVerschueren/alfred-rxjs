@@ -13,12 +13,7 @@ rxjs.getDocs()
 					autocomplete: method.title,
 					arg: method.url,
 					quicklookurl: method.url,
-					mods: {
-						alt: {
-							subtitle: method.import,
-							arg: method.import
-						}
-					}
+					icon: method.icon
 				};
 			});
 

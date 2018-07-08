@@ -1,22 +1,19 @@
 import test from 'ava';
 import alfyTest from 'alfy-test';
 
-test('class result', async t => {
+test('observable result', async t => {
 	const alfy = alfyTest();
 	const result = await alfy('replaysubject');
 
 	t.deepEqual(result, [
 		{
 			title: 'ReplaySubject',
-			subtitle: 'class',
+			subtitle: 'Observable',
 			autocomplete: 'ReplaySubject',
-			arg: 'http://reactivex.io/rxjs/class/es6/ReplaySubject.js~ReplaySubject.html',
-			quicklookurl: 'http://reactivex.io/rxjs/class/es6/ReplaySubject.js~ReplaySubject.html',
-			mods: {
-				alt: {
-					subtitle: `import { ReplaySubject } from 'rxjs/ReplaySubject';`,
-					arg: `import { ReplaySubject } from 'rxjs/ReplaySubject';`
-				}
+			arg: 'https://rxjs-dev.firebaseapp.com/api/index/ReplaySubject',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/index/ReplaySubject',
+			icon: {
+				path: './icons/class.png'
 			}
 		}
 	]);
@@ -31,47 +28,48 @@ test('operator result', async t => {
 			title: 'mergeMap',
 			subtitle: 'operator',
 			autocomplete: 'mergeMap',
-			arg: 'http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap',
-			quicklookurl: 'http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMap',
-			mods: {
-				alt: {
-					subtitle: `import 'rxjs/add/operator/mergeMap';`,
-					arg: `import 'rxjs/add/operator/mergeMap';`
-				}
+			arg: 'https://rxjs-dev.firebaseapp.com/api/operators/mergeMap',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/operators/mergeMap',
+			icon: {
+				path: './icons/function.png'
 			}
 		},
 		{
 			title: 'mergeMapTo',
 			subtitle: 'operator',
 			autocomplete: 'mergeMapTo',
-			arg: 'http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMapTo',
-			quicklookurl: 'http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-mergeMapTo',
-			mods: {
-				alt: {
-					subtitle: `import 'rxjs/add/operator/mergeMapTo';`,
-					arg: `import 'rxjs/add/operator/mergeMapTo';`
-				}
+			arg: 'https://rxjs-dev.firebaseapp.com/api/operators/mergeMapTo',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/operators/mergeMapTo',
+			icon: {
+				path: './icons/function.png'
 			}
 		}
 	]);
 });
 
-test('dom result', async t => {
+test('deprecated', async t => {
 	const alfy = alfyTest();
-	const result = await alfy('websocket');
+	const result = await alfy('combineLatest');
 
 	t.deepEqual(result, [
 		{
-			title: 'webSocket',
-			subtitle: 'observable',
-			autocomplete: 'webSocket',
-			arg: 'http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-webSocket',
-			quicklookurl: 'http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-webSocket',
-			mods: {
-				alt: {
-					subtitle: `import 'rxjs/add/observable/dom/webSocket';`,
-					arg: `import 'rxjs/add/observable/dom/webSocket';`
-				}
+			title: 'combineLatest',
+			subtitle: 'Observable',
+			autocomplete: 'combineLatest',
+			arg: 'https://rxjs-dev.firebaseapp.com/api/index/combineLatest',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/index/combineLatest',
+			icon: {
+				path: './icons/function.png'
+			}
+		},
+		{
+			title: 'combineLatest',
+			subtitle: 'operator - deprecated',
+			autocomplete: 'combineLatest',
+			arg: 'https://rxjs-dev.firebaseapp.com/api/operators/combineLatest',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/operators/combineLatest',
+			icon: {
+				path: './icons/function-deprecated.png'
 			}
 		}
 	]);

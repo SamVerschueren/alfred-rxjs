@@ -19,7 +19,6 @@ $ npm install -g alfred-rxjs
 In Alfred, type `rxjs`, <kbd>Enter</kbd>, and your query.
 
 Select an item and press <kbd>Enter</kbd> to go to its [RxJS](http://reactivex.io/rxjs) documentation.<br>
-Hold <kbd>Alt</kbd> and press <kbd>Enter</kbd> to copy the `import` statement.<br>
 Press <kbd>Shift</kbd> to view the documentation in Quick Look.
 
 

@@ -34,9 +34,7 @@
     "productivity"
   ],
   "dependencies": {
-    "alfy": "^0.6.0",
-    "globby": "^6.1.0",
-    "rxjs": "^5.1.0"
+    "alfy": "^0.6.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
