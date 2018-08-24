@@ -10,8 +10,8 @@ test('observable result', async t => {
 			title: 'ReplaySubject',
 			subtitle: 'Observable',
 			autocomplete: 'ReplaySubject',
-			arg: 'https://rxjs-dev.firebaseapp.com/api/index/ReplaySubject',
-			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/index/ReplaySubject',
+			arg: 'https://rxjs-dev.firebaseapp.com/api/index/class/ReplaySubject',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/index/class/ReplaySubject',
 			icon: {
 				path: './icons/class.png'
 			}
@@ -56,8 +56,8 @@ test('deprecated', async t => {
 			title: 'combineLatest',
 			subtitle: 'Observable',
 			autocomplete: 'combineLatest',
-			arg: 'https://rxjs-dev.firebaseapp.com/api/index/combineLatest',
-			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/index/combineLatest',
+			arg: 'https://rxjs-dev.firebaseapp.com/api/index/function/combineLatest',
+			quicklookurl: 'https://rxjs-dev.firebaseapp.com/api/index/function/combineLatest',
 			icon: {
 				path: './icons/function.png'
 			}
