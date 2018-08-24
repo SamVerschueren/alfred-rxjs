@@ -1,6 +1,6 @@
 {
   "name": "alfred-rxjs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Search through the RxJS documentation",
   "license": "MIT",
   "repository": "SamVerschueren/alfred-rxjs",
