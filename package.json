@@ -21,7 +21,8 @@
     "index.js",
     "lib",
     "icon.png",
-    "info.plist"
+    "info.plist",
+    "icons"
   ],
   "keywords": [
     "alfred",
